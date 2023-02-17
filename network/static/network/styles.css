@@ -1,0 +1,26 @@
+.post{
+    border:black solid 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+p{margin:0}
+#new{
+    border:black solid 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#user{
+    font-weight: bold;
+    font-size: large;
+}
+#content{
+    font-weight: bold;
+}

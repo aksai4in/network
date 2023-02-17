@@ -1,0 +1,17 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+    <div class = "post" id="profile">
+        <p>{{name}}</p>
+        <p>following:<text id="following"></text>   followers:<text id="followers"></text></p>
+        {% if user.username != name %}
+        <button id="follow">follow</button>
+        <button id="unfollow">unfollow</button>
+        {% endif %}
+        
+    </div>
+    <div class="posts">
+    </div>
+    {% endif %}
+{% endblock %}

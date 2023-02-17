@@ -1,0 +1,23 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<h2 style="margin:20px">All posts</h2>
+<form id="newpost">
+    {% csrf_token %}
+    <div id="new">
+        <div>
+            <h4>New Post</h4>
+        </div>
+        <div>
+            <input id="textarea" type="text" name="post" placeholder="What's happening?">
+        </div>
+        <div>
+            <input id="submit" type="submit" value="Post">
+        </div>
+    </div>
+</form>
+<div class="posts">
+</div>
+{% endif %}
+{% endblock %}
